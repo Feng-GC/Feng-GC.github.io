@@ -55,15 +55,19 @@
   };
 </script>
 
-  <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://yoursite.com/2019/08/09/test/index.html">
+  <meta name="description" content="近日搭建了自己的 Blog，使用的是 Hexo + github pages，记录一下博客的搭建过程">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo博客搭建及上线过程">
+<meta property="og:url" content="http://yoursite.com/2019/08/10/博客搭建及上线过程/index.html">
 <meta property="og:site_name" content="Feng-GC">
+<meta property="og:description" content="近日搭建了自己的 Blog，使用的是 Hexo + github pages，记录一下博客的搭建过程">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-09T12:40:19.627Z">
+<meta property="og:updated_time" content="2019-08-10T10:43:46.215Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-  <link rel="canonical" href="http://yoursite.com/2019/08/09/test/">
+<meta name="twitter:title" content="hexo博客搭建及上线过程">
+<meta name="twitter:description" content="近日搭建了自己的 Blog，使用的是 Hexo + github pages，记录一下博客的搭建过程">
+  <link rel="canonical" href="http://yoursite.com/2019/08/10/博客搭建及上线过程/">
 
 
 <script id="page-configurations">
@@ -77,7 +81,7 @@
   };
 </script>
 
-  <title>test | Feng-GC</title>
+  <title>hexo博客搭建及上线过程 | Feng-GC</title>
   
 
 
@@ -203,7 +207,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/09/test/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/10/博客搭建及上线过程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Feng-GC">
@@ -217,7 +221,7 @@
       <header class="post-header">
 
         
-          <h1 class="post-title" itemprop="name headline">test
+          <h1 class="post-title" itemprop="name headline">hexo博客搭建及上线过程
 
             
           </h1>
@@ -234,8 +238,12 @@
                 
               
 
-              <time title="创建时间：2019-08-09 20:40:19" itemprop="dateCreated datePublished" datetime="2019-08-09T20:40:19+08:00">2019-08-09</time>
+              <time title="创建时间：2019-08-10 15:58:49 / 修改时间：18:43:46" itemprop="dateCreated datePublished" datetime="2019-08-10T15:58:49+08:00">2019-08-10</time>
             </span>
+          
+            
+
+            
           
 
           
@@ -249,7 +257,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        
+        <p>  近日搭建了自己的 Blog，使用的是 Hexo + github pages，记录一下博客的搭建过程<br>  <a id="more"></a></p>
+<h1 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h1><p>  node.js:构建本地博客需要node.js的支持，官网下载安装node.js;<br>  git:版本控制工具<br>  hexo:hexo是一个快速、简洁且高效的博客框架</p>
+<h1 id="安装并启动hexo"><a href="#安装并启动hexo" class="headerlink" title="安装并启动hexo"></a>安装并启动hexo</h1>  <figure class="highlight plain"><figcaption><span>hexo安装启动流程</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+  
+<p>  在出现上面的成功的提示后就可以在浏览器打开“localhost:4000”，hexo本地服务就可以启动了</p>
+<h1 id="美化hexo"><a href="#美化hexo" class="headerlink" title="美化hexo"></a>美化hexo</h1><p>  启动成功后的hexo的是以默认主题样式来显示的，我们可以在<strong><a href="https://hexo.io/themes/" target="_blank" rel="noopener">Themes</a></strong>这里找到自已的喜欢的主题clone下来然后，打开站点配置文件_config.yml进行修改即可</p>
+<h1 id="将博客部署到gitHub"><a href="#将博客部署到gitHub" class="headerlink" title="将博客部署到gitHub"></a>将博客部署到gitHub</h1><p>  首先要做的是注册一个帐号，注册好一个帐号我们需要新建仓库，在名字那一栏需填写自已的名字<br>  然后配置SSH </p>
+
     </div>
 
     
@@ -259,14 +275,23 @@
       
 
       <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+            
+          </div>
+        
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/08/08/2019-8-9学习文章格式/" rel="next" title="学习Markdown格式">
-                  <i class="fa fa-chevron-left"></i> 学习Markdown格式
+                <a href="/2019/08/09/hello-world/" rel="next" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
                 </a>
               
             </div>
@@ -275,8 +300,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/08/09/hello-world/" rel="prev" title="Hello World">
-                  Hello World <i class="fa fa-chevron-right"></i>
+                <a href="/2019/08/10/2019-8-10博客搭建及上线过程/" rel="prev" title="hexo博客搭建及上线过程">
+                  hexo博客搭建及上线过程 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -309,8 +334,17 @@
 
   <aside id="sidebar" class="sidebar">
     <div class="sidebar-inner">
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -351,6 +385,23 @@
 
         </div>
       </div>
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#配置环境"><span class="nav-number">1.</span> <span class="nav-text">配置环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装并启动hexo"><span class="nav-number">2.</span> <span class="nav-text">安装并启动hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#美化hexo"><span class="nav-number">3.</span> <span class="nav-text">美化hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#将博客部署到gitHub"><span class="nav-number">4.</span> <span class="nav-text">将博客部署到gitHub</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
     </div>
   </aside>
